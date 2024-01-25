@@ -2,12 +2,14 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.template import Template, Context, loader
 
-def test01(self):
+def inicio(request):
     
-    diccionario = {}
+    return render(request, "inicio.html")
 
-    plantilla = loader.get_template('template1.html')
+def cursos(request):
+    
+    return render(request, "cursos.html")
 
-    documento = plantilla.render(diccionario)
-
-    return HttpResponse(documento)
+def profesores(request):
+    
+    return render(request, "profesores.html")

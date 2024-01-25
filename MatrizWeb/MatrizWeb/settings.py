@@ -55,7 +55,7 @@ ROOT_URLCONF = 'MatrizWeb.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['D:/CURSO PYTHON CODERHOUSE/Página Web Matriz/MatrizWeb/MatrizWeb/templates/'],
+        'DIRS': ['D:/CURSO PYTHON CODERHOUSE/Página Web Matriz/MatrizWeb/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
