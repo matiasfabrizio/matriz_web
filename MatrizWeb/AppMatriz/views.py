@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.template import Template, Context, loader
+from .models import *
 
 def inicio(request):
     
@@ -13,7 +14,3 @@ def cursos(request):
 def profesores(request):
     
     return render(request, "profesores.html")
-
-def cursoFormulario(request):
-
-    return render(request, "cursoFormulario.html")
