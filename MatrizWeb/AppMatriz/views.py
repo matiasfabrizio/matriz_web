@@ -13,3 +13,7 @@ def cursos(request):
 def profesores(request):
     
     return render(request, "profesores.html")
+
+def cursoFormulario(request):
+
+    return render(request, "cursoFormulario.html")
