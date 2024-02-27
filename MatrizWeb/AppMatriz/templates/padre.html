@@ -12,7 +12,7 @@
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="{% static 'AppMatriz/assets/favicon.ico' %}" />
         <!-- Bootstrap Icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
@@ -36,8 +36,20 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#acerca_de">Acerca de</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'Cursos' %}">Cursos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'Profesores' %}">Profesores</a></li>
+                        <li class="nav-item">
+                            {% if request.path == '/AppMatriz/cursos/' %}
+                                <a class="nav-link" href="#cursos">Cursos</a>
+                            {% else %}
+                                <a class="nav-link" href="{% url 'Cursos' %}">Cursos</a>
+                            {% endif %}
+                        </li>
+                        <li class="nav-item">
+                            {% if request.path == '/AppMatriz/profesores/' %}
+                                <a class="nav-link" href="#profesores">Profesores</a>
+                            {% else %}
+                                <a class="nav-link" href="{% url 'Profesores' %}">Profesores</a>
+                            {% endif %}
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
                     </ul>
                 </div>
@@ -48,12 +60,12 @@
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">Tu academia favorita de preparación y refuerzo para la UP</h1>
+                        <h1 class="text-white font-weight-bold">Matriz</h1>
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">Este es un texto de prueba!</p>
-                        <a class="btn btn-primary btn-xl" href="#about">Encuentra más</a>
+                        <p class="text-white-75 mb-5">Preparación y Refuerzo para la UP.</p>
+                        <a class="btn btn-primary btn-xl" href="#acerca_de">Encuentra más</a>
                     </div>
                 </div>
             </div>
@@ -62,7 +74,6 @@
 
 
         <!-- Acerca de -->
-        <div id=acerca_de></div>
         {% block inicio %}
         
         {% endblock inicio %}
@@ -70,20 +81,16 @@
 
 
         <!-- Cursos-->
-        <div id=cursos>
         {% block cursos %}
         
         {% endblock cursos %}
-        </div>
 
 
 
         <!-- Profesores-->
-        <div id="profesores">
         {% block profesores %}
         
         {% endblock profesores %}
-        </div>
 
 
 
@@ -107,7 +114,10 @@
                     <div class="col-lg-8 col-xl-6 text-center">
                         <h2 class="mt-0">Contáctanos!</h2>
                         <hr class="divider" />
-                        <p class="text-muted mb-5">Listo para aprender y dar tu 100% en tu vida universitaria? Escríbenos tu información para formar parte de Matriz!</p>
+                        <p class="text-muted mb-4">Listo para aprender y dar tu 100% en tu vida universitaria? Escríbenos tu información para formar parte de Matriz!</p>
+                        <p class="text-muted mb-0">Horarios de Atención</p>
+                        <p class="text-muted mb-4">8:00 am a 6:00 pm</p>
+                        <p class="text-muted mb-4">Nos encontramos en Jr. Huáscar 2185, Jesús María 15072</p>
                     </div>
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
