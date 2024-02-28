@@ -6,11 +6,11 @@ class Curso(models.Model):
     horario = models.CharField(max_length=17)
 
     def __str__(self):
-        return f"Nombre: {self.nombre} - Horario: {self.horario}"
+        return f"{self.nombre} - Horario: {self.horario}"
 
 class Profesor(models.Model):
 
     nombre = models.CharField(max_length=40)
 
     def __str__(self):
-        return f"Nombre: {self.nombre}"
+        return f"{self.nombre}"

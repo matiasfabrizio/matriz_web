@@ -37,17 +37,17 @@
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#acerca_de">Acerca de</a></li>
                         <li class="nav-item">
-                            {% if request.path == '/AppMatriz/cursos/' %}
-                                <a class="nav-link" href="#cursos">Cursos</a>
+                            {% if request.path == '/AppMatriz/admision/' %}
+                                <a class="nav-link" href="#admision">Admision</a>
                             {% else %}
-                                <a class="nav-link" href="{% url 'Cursos' %}">Cursos</a>
+                                <a class="nav-link" href="{% url 'Admision' %}">Admisión</a>
                             {% endif %}
                         </li>
                         <li class="nav-item">
-                            {% if request.path == '/AppMatriz/profesores/' %}
-                                <a class="nav-link" href="#profesores">Profesores</a>
+                            {% if request.path == '/AppMatriz/refuerzo/' %}
+                                <a class="nav-link" href="#refuerzo">Refuerzo</a>
                             {% else %}
-                                <a class="nav-link" href="{% url 'Profesores' %}">Profesores</a>
+                                <a class="nav-link" href="{% url 'Refuerzo' %}">Refuerzo</a>
                             {% endif %}
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
@@ -80,33 +80,35 @@
 
 
 
-        <!-- Cursos-->
-        {% block cursos %}
+        <!-- Admision-->
+        {% block admision %}
         
-        {% endblock cursos %}
+        {% endblock admision %}
 
 
 
-        <!-- Profesores-->
-        {% block profesores %}
+
+
+
+
+
+
+
+
+        <!-- Refuerzo-->
+        {% block refuerzo %}
         
-        {% endblock profesores %}
+        {% endblock refuerzo %}
 
 
 
-        <!-- Curso Formulario-->
-        {% block cursoFormulario %}
-        
-        {% endblock cursoFormulario %}
+            <!-- Esta 1-->
+            {% block esta1 %}
+            
+            {% endblock esta1 %}
 
 
-        <!-- Call to action
-        <section class="page-section bg-dark text-white">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-                <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a>
-            </div>
-        </section>-->
+
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container px-4 px-lg-5">

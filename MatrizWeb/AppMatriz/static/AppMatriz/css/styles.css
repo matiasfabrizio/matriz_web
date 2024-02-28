@@ -10958,14 +10958,14 @@ header.masthead h1, header.masthead .h1 {
   }
 }
 
-#profesores .container-fluid, #profesores .container-sm, #profesores .container-md, #profesores .container-lg, #profesores .container-xl, #profesores .container-xxl {
+#cursos .container-fluid, #cursos .container-sm, #cursos .container-md, #cursos .container-lg, #cursos .container-xl, #cursos .container-xxl {
   max-width: 1920px;
 }
-#profesores .container-fluid .profesor-box, #profesores .container-sm .profesor-box, #profesores .container-md .profesor-box, #profesores .container-lg .profesor-box, #profesores .container-xl .profesor-box, #profesores .container-xxl .profesor-box {
+#cursos .container-fluid .curso-box, #cursos .container-sm .curso-box, #cursos .container-md .curso-box, #cursos .container-lg .curso-box, #cursos .container-xl .curso-box, #cursos .container-xxl .curso-box {
   position: relative;
   display: block;
 }
-#profesores .container-fluid .profesor-box .profesor-box-caption, #profesores .container-sm .profesor-box .profesor-box-caption, #profesores .container-md .profesor-box .profesor-box-caption, #profesores .container-lg .profesor-box .profesor-box-caption, #profesores .container-xl .profesor-box .profesor-box-caption, #profesores .container-xxl .profesor-box .profesor-box-caption {
+#cursos .container-fluid .curso-box .curso-box-caption, #cursos .container-sm .curso-box .curso-box-caption, #cursos .container-md .curso-box .curso-box-caption, #cursos .container-lg .curso-box .curso-box-caption, #cursos .container-xl .curso-box .curso-box-caption, #cursos .container-xxl .curso-box .curso-box-caption {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10981,15 +10981,15 @@ header.masthead h1, header.masthead .h1 {
   transition: opacity 0.25s ease;
   text-align: center;
 }
-#profesores .container-fluid .profesor-box .profesor-box-caption .project-category, #profesores .container-sm .profesor-box .profesor-box-caption .project-category, #profesores .container-md .profesor-box .profesor-box-caption .project-category, #profesores .container-lg .profesor-box .profesor-box-caption .project-category, #profesores .container-xl .profesor-box .profesor-box-caption .project-category, #profesores .container-xxl .profesor-box .profesor-box-caption .project-category {
+#cursos .container-fluid .curso-box .curso-box-caption .project-category, #cursos .container-sm .curso-box .curso-box-caption .project-category, #cursos .container-md .curso-box .curso-box-caption .project-category, #cursos .container-lg .curso-box .curso-box-caption .project-category, #cursos .container-xl .curso-box .curso-box-caption .project-category, #cursos .container-xxl .curso-box .curso-box-caption .project-category {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
 }
-#profesores .container-fluid .profesor-box .profesor-box-caption .project-name, #profesores .container-sm .profesor-box .profesor-box-caption .project-name, #profesores .container-md .profesor-box .profesor-box-caption .project-name, #profesores .container-lg .profesor-box .profesor-box-caption .project-name, #profesores .container-xl .profesor-box .profesor-box-caption .project-name, #profesores .container-xxl .profesor-box .profesor-box-caption .project-name {
+#cursos .container-fluid .curso-box .curso-box-caption .project-name, #cursos .container-sm .curso-box .curso-box-caption .project-name, #cursos .container-md .curso-box .curso-box-caption .project-name, #cursos .container-lg .curso-box .curso-box-caption .project-name, #cursos .container-xl .curso-box .curso-box-caption .project-name, #cursos .container-xxl .curso-box .curso-box-caption .project-name {
   font-size: 1.2rem;
 }
-#profesores .container-fluid .profesor-box:hover .profesor-box-caption, #profesores .container-sm .profesor-box:hover .profesor-box-caption, #profesores .container-md .profesor-box:hover .profesor-box-caption, #profesores .container-lg .profesor-box:hover .profesor-box-caption, #profesores .container-xl .profesor-box:hover .profesor-box-caption, #profesores .container-xxl .profesor-box:hover .profesor-box-caption {
+#cursos .container-fluid .curso-box:hover .curso-box-caption, #cursos .container-sm .curso-box:hover .curso-box-caption, #cursos .container-md .curso-box:hover .curso-box-caption, #cursos .container-lg .curso-box:hover .curso-box-caption, #cursos .container-xl .curso-box:hover .curso-box-caption, #cursos .container-xxl .curso-box:hover .curso-box-caption {
   opacity: 1;
 }

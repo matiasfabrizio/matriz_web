@@ -52,8 +52,16 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
     // Activate SimpleLightbox plugin for portfolio items
-    new SimpleLightbox({
-        elements: '#profesores a.profesor-box'
+    //new SimpleLightbox({
+    //    elements: '#cursos a.curso-box'
+    //});
+
+    // Prevent SimpleLightbox from opening when clicking curso-box
+    document.querySelectorAll('#cursos a.curso-box').forEach(function(element) {
+        element.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default behavior of the click event
+            window.location.href = element.href; // Redirect to the specified URL
+        });
     });
 
 });

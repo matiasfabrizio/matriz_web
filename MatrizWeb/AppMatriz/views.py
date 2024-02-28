@@ -1,16 +1,18 @@
-from django.http import HttpResponse
-from django.shortcuts import render
-from django.template import Template, Context, loader
+from django.shortcuts import render, get_object_or_404
 from .models import *
 
 def inicio(request):
     
     return render(request, "inicio.html")
 
-def cursos(request):
+def admision(request):
     
-    return render(request, "cursos.html")
+    return render(request, "admision.html")
 
-def profesores(request):
+def refuerzo(request):
     
-    return render(request, "profesores.html")
+    return render(request, "refuerzo.html")
+
+def esta1(request):
+
+    return render(request, "c_esta1.html")
