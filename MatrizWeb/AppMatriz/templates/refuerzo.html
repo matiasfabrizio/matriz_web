@@ -4,17 +4,9 @@
 
 {% block refuerzo %}
 
-<div class="container px-4 px-lg-5">
-    <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-lg-8 col-xl-6 text-center">
-            <h1 class="my-5 text-uppercase fw-bold">Refuerzo Universitario</h1>
-            <hr class="divider" />
-        </div>
-    </div>
-</div>
 <section id=refuerzo>
     <div class="container px-4 px-lg-5">
-        <h1 class="text-center mt-5">Estadística 1</h1>
+        <h1 class="text-center mt-5 text-uppercase fw-bold">Refuerzo Universitario</h1>
         <hr class="divider" />
         <div class="row justify-content-between">
             <div class="col-lg-6 col-md-8 text-start">
@@ -27,7 +19,7 @@
             </div>
             <div class="col-lg-5 col-md-6 align-self-center">
                 <!-- Placeholder for your image -->
-                <img src="{% static 'AppMatriz/assets/horarios/horario acsis.jpg' %}" alt="..." class="img-fluid" >
+                <img src="{{ horario.imagen.url }}" alt="..." class="img-fluid" >
             </div>
         </div>
     </div>
