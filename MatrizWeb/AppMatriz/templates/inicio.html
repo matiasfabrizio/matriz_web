@@ -4,7 +4,82 @@
 
 {% block inicio %}
 
-<section class="page-section bg-primary" id=acerca_de>
+
+{% block contenedores %}
+    {{ block.super }}
+
+<div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-8 col-xl-6 text-center">
+            <h1 class="my-5 text-uppercase fw-bold">Nuestros productos</h1>
+            <hr class="divider" />
+        </div>
+    </div>
+</div>
+<div id="cursos">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-lg-4 col-sm-6">
+                <a class="curso-box" href="/AppMatriz/refuerzo/">
+                    <img class="img-fluid curso-image" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/1.jpg' %}" alt="..." />
+                    <div class="curso-box-caption">
+                        <div class="project-category text-white-50"></div>
+                        <div class="project-name">Refuerzo Universitario</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="curso-box" href="/AppMatriz/refuerzo/esta2" title="Project Name">
+                    <img class="img-fluid" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/2.jpg' %}" alt="..." />
+                    <div class="curso-box-caption">
+                        <div class="project-category text-white-50"></div>
+                        <div class="project-name">Refuerzo Pre</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="curso-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
+                    <img class="img-fluid" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/3.jpg' %}" alt="..." />
+                    <div class="curso-box-caption">
+                        <div class="project-category text-white-50"></div>
+                        <div class="project-name">Admisión Regular</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="curso-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
+                    <img class="img-fluid" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/4.jpg' %}" alt="..." />
+                    <div class="curso-box-caption">
+                        <div class="project-category text-white-50"></div>
+                        <div class="project-name">Nivelación</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="curso-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
+                    <img class="img-fluid" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/5.jpg' %}" alt="..." />
+                    <div class="curso-box-caption">
+                        <div class="project-category text-white-50"></div>
+                        <div class="project-name">Adelanto Escolar</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="curso-box" href="assets/img/portfolio/fullsize/6.jpg" title="Project Name">
+                    <img class="img-fluid" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/6.jpg' %}" alt="..." />
+                    <div class="curso-box-caption p-3">
+                        <div class="project-category text-white-50"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock contenedores %}
+
+
+<section class="page-section bg-dark" id=acerca_de>
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8 text-center">
