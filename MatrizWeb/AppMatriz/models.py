@@ -1,17 +1,8 @@
 from django.db import models
 
-class Curso(models.Model):
+class Horario(models.Model):
 
-    nombre = models.CharField(max_length=40)
-    horario = models.CharField(max_length=17)
-    codigo = models.CharField(max_length=10)
+    imagen = models.ImageField(upload_to='AppMatriz/assets/horario')
 
-    def __str__(self):
-        return f"{self.nombre} - Horario: {self.horario} - Código: {self.codigo}"
-
-class Profesor(models.Model):
-
-    nombre = models.CharField(max_length=40)
-
-    def __str__(self):
-        return f"{self.nombre}"
+    def __str__(self) -> str:
+        return f'Horario'
