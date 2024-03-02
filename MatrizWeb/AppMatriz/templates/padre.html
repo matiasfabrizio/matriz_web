@@ -31,22 +31,23 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="{% url 'Inicio' %}">Matriz</a>
+                <a class="navbar-brand" href="{% url 'Inicio' %}">
+                    <img src="{% static 'AppMatriz/assets/logo-rojo-matriz.png' %}" alt="Matriz" style="height: 30px;">
+                </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Universitario</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Pre-Universitario</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Escolar</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'Nosotros' %}">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'Refuerzo' %}">Universitario</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'RefuerzoPre' %}">Pre-Universitario</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'Adelanto' %}">Escolar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contactanos">Redes</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead"></header>
 
+        <!-- Masthead-->
         <!-- 6 Ventanas de Inicio-->
         <!-- Acerca de -->
         {% block inicio %}
@@ -75,6 +76,10 @@
         
         {% endblock refuerzo %}
 
+        {% block refuerzo2 %}
+        
+        {% endblock refuerzo2 %}
+
 
 
             <!-- Esta 1-->
@@ -89,84 +94,63 @@
 
 
 
-        <!-- Contact-->
-        <section class="page-section" id="contact">
+
+        <!-- Contacto -->
+        <section class="page-content bg-dark text-white" id="map">
             <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 col-xl-6 text-center">
-                        <h2 class="mt-0">Contáctanos!</h2>
-                        <hr class="divider" />
-                        <p class="text-muted mb-4">Listo para aprender y dar tu 100% en tu vida universitaria? Escríbenos tu información para formar parte de Matriz!</p>
-                        <p class="text-muted mb-0">Horarios de Atención</p>
-                        <p class="text-muted mb-4">8:00 am a 6:00 pm</p>
-                        <p class="text-muted mb-4">Nos encontramos en Jr. Huáscar 2185, Jesús María 15072</p>
+                <h2 class="text-center">Ubícanos</h2>
+                <hr class="divider divider-light" />
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-3">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center">
+                                <i class="bi bi-whatsapp fs-2 text-primary"></i>
+                            </div>
+                            <div class="col-md-9">
+                                <a href="https://wa.link/4zua5n" target="_blank">
+                                    <h3 class="h4 my-4 text-white">WhatsApp</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center">
+                                <i class="bi bi-instagram fs-2 text-primary"></i>
+                            </div>
+                            <div class="col-md-9">
+                                <a href="https://www.instagram.com/grupomatriz__/" target="_blank">
+                                    <h3 class="h4 my-4 text-white">Instagram</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center">
+                                <i class="bi bi-tiktok fs-2 text-primary"></i>
+                            </div>
+                            <div class="col-md-9">
+                                <a href="https://www.tiktok.com/@matriz_omega" target="_blank">
+                                    <h3 class="h4 my-4 text-white">Tik Tok</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center">
+                                <i class="bi bi-facebook fs-2 text-primary"></i>
+                            </div>
+                            <div class="col-md-9">
+                                <a href="https://www.facebook.com/lamatriz" target="_blank">
+                                    <h3 class="h4 my-4 text-white">Facebook</h3>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-                    <div class="col-lg-6">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Nombre completo</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Se requiere un nombre.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Dirección de correo</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">Se requiere un correo electrónico.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">El correo electrónico no es válido.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(+51) 123456789" data-sb-validations="required" />
-                                <label for="phone">Teléfono celular</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">Se requiere un número de teléfono válido..</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Mensaje</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">Se requiere un mensaje.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Enviar</button></div>
-                        </form>
-                    </div>
-                </div>
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                        <i class="bi-phone fs-2 mb-3 text-muted"></i>
-                        <div>+51 123-4567</div>
+                    <div class="col-md-9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.3959462581047!2d-77.05317682314168!3d-12.08502364261792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8f91eb4fed5%3A0x2cdb5954d728d28b!2sGrupo%20La%20Matriz!5e0!3m2!1ses!2sca!4v1709299462987!5m2!1ses!2sca" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </section>
+
+
         <!-- Footer-->
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2023 - Matriz</div></div>
