@@ -25,10 +25,6 @@ def refuerzo(request):
 
     return render(request, "refuerzo.html")
 
-def refuerzo2(request):
-
-    return render(request, "refuerzo2.html")
-
 def r_esta1(request):
     
     horarios = Horario.objects.filter(imagen__icontains='esta1')

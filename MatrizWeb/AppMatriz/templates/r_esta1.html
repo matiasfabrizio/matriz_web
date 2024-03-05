@@ -38,7 +38,7 @@
 
 <section class="page-section" id=esta1>
     <div class="container px-4 px-lg-5">
-        <h1 class="text-center">Profesor a cargo</h1>
+        <h2 class="text-center">Profesor a cargo</h2>
         <hr class="divider" />
         <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6 mt-5 align-self-center">
@@ -59,15 +59,14 @@
 
 <!-- Horarios Section -->
 <section id="horarios">
-    <div class="container px-4 px-lg-5">
-        <h1 class="text-center mt-5 text-uppercase fw-bold">Horarios</h1>
+    <div class="container px-4 px-lg-8">
+        <h2 class="text-center mt-0 text-uppercase fw-bold">Horario</h2>
         <hr class="divider" />
         <div class="row">
             {% for horario in horarios %}
             <div class="col-md-12 mb-4">
                 <div class="text-center">
-                    <img src="{{ horario.imagen.url }}" alt="Image {{ forloop.counter }}" height="500px">
-                    <p class="mt-2">Horario {{ forloop.counter }}</p>
+                    <img src="{{ horario.imagen.url }}" alt="Image {{ forloop.counter }}" class="img-fluid" >
                 </div>
             </div>
             {% endfor %}
@@ -76,7 +75,7 @@
 </section>
 
 <!-- Volver -->
-<section class="page-section bg-dark text-white">
+<section class="page-section bg-rojo text-white">
     <div class="container px-4 px-lg-5 text-center">
         <h2 class="mb-4">Ver más cursos de Refuerzo UP</h2>
         <a class="btn btn-light btn-xl" href="/AppMatriz/refuerzo/">Regresar</a>

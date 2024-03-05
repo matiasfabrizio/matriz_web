@@ -2,9 +2,7 @@
 
 {% load static %}
 
-{% block refuerzo %}
-    {{ block.super }}  
-
+{% block refuerzo2 %}
 
 <section class="page-subsection bg-rojo">
     <div class="container px-4 px-lg-5">
@@ -16,182 +14,233 @@
     </div>
 </section>
 
-<section class="bg-dark text-white">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 col-xl-6 text-center">
-                <h3 class="mt-5 text-uppercase fw-bold">Cursos</h3>
-                <hr class="divider divider-light" />
-            </div>
-        </div>
-    </div>
-    <div id="cursos">
-        <div class="container-fluid p-0">
-            <div class="row g-0">
-                <div class="col-lg-4 col-sm-6">
-                    <a class="curso-box" href="{% url 'Esta1' %}">
-                        <img class="img-fluid curso-image" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/1.jpg' %}" alt="..." style="border-radius: 50px;"/>
-                        <div class="curso-box-caption">
-                            <div class="project-category text-white-50"></div>
-                            <div class="project-name">Estadística 1</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="curso-box" href="{% url 'Esta2' %}" title="Project Name">
-                        <img class="img-fluid" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/2.jpg' %}" alt="..." />
-                        <div class="curso-box-caption">
-                            <div class="project-category text-white-50"></div>
-                            <div class="project-name">Estadística 2</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="curso-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
-                        <img class="img-fluid" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/3.jpg' %}" alt="..." />
-                        <div class="curso-box-caption">
-                            <div class="project-category text-white-50"></div>
-                            <div class="project-name">Análisis Multivariado para los Negocios</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="curso-box" href="#" title="Project Name">
-                        <img class="img-fluid" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/2.jpg' %}" alt="..." />
-                        <div class="curso-box-caption">
-                            <div class="project-category text-white-50"></div>
-                            <div class="project-name">Nivelación en Matemáticas</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="curso-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
-                        <img class="img-fluid" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/4.jpg' %}" alt="..." />
-                        <div class="curso-box-caption">
-                            <div class="project-category text-white-50"></div>
-                            <div class="project-name">Matemáticas 1</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="curso-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
-                        <img class="img-fluid" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/5.jpg' %}" alt="..." />
-                        <div class="curso-box-caption">
-                            <div class="project-category text-white-50"></div>
-                            <div class="project-name">Matemáticas 2</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="curso-box" href="#" title="Project Name">
-                        <img class="img-fluid" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/2.jpg' %}" alt="..." />
-                        <div class="curso-box-caption">
-                            <div class="project-category text-white-50"></div>
-                            <div class="project-name">Matemáticas para los Negocios</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="curso-box" href="assets/img/portfolio/fullsize/6.jpg" title="Project Name">
-                        <img class="img-fluid" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/6.jpg' %}" alt="..." />
-                        <div class="curso-box-caption p-3">
-                            <div class="project-category text-white-50"></div>
-                            <div class="project-name">Matemáticas 3</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="curso-box" href="/AppMatriz/refuerzo/esta1">
-                        <img class="img-fluid curso-image" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/1.jpg' %}" alt="..." />
-                        <div class="curso-box-caption">
-                            <div class="project-category text-white-50"></div>
-                            <div class="project-name">Matemáticas 4</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="curso-box" href="#" title="Project Name">
-                        <img class="img-fluid" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/2.jpg' %}" alt="..." />
-                        <div class="curso-box-caption">
-                            <div class="project-category text-white-50"></div>
-                            <div class="project-name">Nivelación en Lenguaje</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="curso-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
-                        <img class="img-fluid" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/3.jpg' %}" alt="..." />
-                        <div class="curso-box-caption">
-                            <div class="project-category text-white-50"></div>
-                            <div class="project-name">Lenguaje 1</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="curso-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
-                        <img class="img-fluid" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/4.jpg' %}" alt="..." />
-                        <div class="curso-box-caption">
-                            <div class="project-category text-white-50"></div>
-                            <div class="project-name">Lenguaje 2</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="curso-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
-                        <img class="img-fluid" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/4.jpg' %}" alt="..." />
-                        <div class="curso-box-caption">
-                            <div class="project-category text-white-50"></div>
-                            <div class="project-name">Nivelación en Informática</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="curso-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
-                        <img class="img-fluid" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/5.jpg' %}" alt="..." />
-                        <div class="curso-box-caption">
-                            <div class="project-category text-white-50"></div>
-                            <div class="project-name">Analítica de Datos para los Negocios</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="curso-box" href="assets/img/portfolio/fullsize/6.jpg" title="Project Name">
-                        <img class="img-fluid" src="{% static 'AppMatriz/assets/img/portfolio/thumbnails/6.jpg' %}" alt="..." />
-                        <div class="curso-box-caption p-3">
-                            <div class="project-category text-white-50"></div>
-                            <div class="project-name">Economía 1</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Refuerzo Universitario Section -->
-<section id="refuerzo">
+<!-- Matemáticas -->
+<section class="page-content">
     <div class="container px-4 px-lg-5">
-        <h1 class="text-center mt-5 text-uppercase fw-bold">Refuerzo Universitario</h1>
+        <h2 class="text-center mt-0">Matemáticas</h2>
         <hr class="divider" />
-        <div class="row justify-content-between">
-            <div class="col-lg-6 col-md-8 text-start">
-                <div class="mt-5">
-                    <div class="mb-2"></div>
-                    <p class="text-muted mb-0">El curso de Estadística 1 ofrece una introducción exhaustiva a los conceptos fundamentales de la estadística y su aplicación en diversos campos académicos y profesionales. 
-                    Diseñado para estudiantes de una amplia gama de disciplinas, este curso aborda temas clave como medidas de tendencia central, dispersión, probabilidad y distribuciones estadísticas. 
-                    A través de una combinación equilibrada de teoría y práctica, los participantes adquieren habilidades para recopilar, organizar y analizar datos de manera efectiva, utilizando herramientas estadísticas y software especializado. 
-                    Además de desarrollar competencias técnicas, el curso fomenta el pensamiento crítico y la capacidad para interpretar los resultados estadísticos de manera significativa. 
-                    Los estudiantes exploran casos de estudio relevantes y aplican técnicas estadísticas para abordar problemas del mundo real en sus respectivos campos de estudio. 
-                    Esta sólida formación proporciona una base fundamental para cursos avanzados en estadística y equipa a los participantes con las habilidades necesarias para enfrentar los desafíos analíticos en sus futuras carreras profesionales.</p>
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="mt-3" style="max-width: 200px; margin: 0 auto;">
+                    <a href="{% url 'Esta1' %}">
+                        <div class="mb-2">
+                            <img src="{% static 'AppMatriz/assets/iconos-cursos/calculadora.png' %}" alt="Esta 1 Icon" style="height: 80px;">
+                        </div>
+                        <h5 class="h5 mb-2">Nivelación en Matemáticas</h5>
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-5 col-md-6 align-self-center">
-                <!-- Placeholder for static image -->
-                <img class="img-fluid curso-image" src="{% static 'AppMatriz/assets/profes/ruben.png' %}" alt="Static Image">
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="mt-3" style="max-width: 200px; margin: 0 auto;">
+                    <a href="{% url 'Esta2' %}">
+                        <div class="mb-2">
+                            <img src="{% static 'AppMatriz/assets/iconos-cursos/materiales.png' %}" alt="Esta 2 Icon" style="height: 80px;">
+                        </div>
+                        <h5 class="h5 mb-2">Matemáticas 1</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="mt-3" style="max-width: 200px; margin: 0 auto;">
+                    <a href="{% url 'Esta2' %}">
+                        <div class="mb-2">
+                            <img src="{% static 'AppMatriz/assets/iconos-cursos/calculadora.png' %}" alt="Esta 2 Icon" style="height: 80px;">
+                        </div>
+                        <h5 class="h5 mb-2">Matemáticas 2</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="mt-5">
+                    <a href="{% url 'Esta1' %}">
+                        <div class="mb-2">
+                            <img src="{% static 'AppMatriz/assets/iconos-cursos/calculadora.png' %}" alt="Esta 1 Icon" style="height: 80px;">
+                        </div>
+                        <h5 class="h5 mb-2">Matemáticas para los Negocios</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="mt-5">
+                    <a href="{% url 'Esta2' %}">
+                        <div class="mb-2">
+                            <img src="{% static 'AppMatriz/assets/iconos-cursos/materiales.png' %}" alt="Esta 2 Icon" style="height: 80px;">
+                        </div>
+                        <h5 class="h5 mb-2">Matemáticas 3</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="mt-5">
+                    <a href="{% url 'Esta2' %}">
+                        <div class="mb-2">
+                            <img src="{% static 'AppMatriz/assets/iconos-cursos/calculadora.png' %}" alt="Esta 2 Icon" style="height: 80px;">
+                        </div>
+                        <h5 class="h5 mb-2">Matemáticas 4</h5>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 
-{% endblock refuerzo %}
+<!-- Estadística -->
+<section class="page-content">
+    <hr class="divider-long" />
+    <div class="container px-4 px-lg-5">
+        <h2 class="text-center mt-0">Estadística</h2>
+        <hr class="divider" />
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="mt-3" style="max-width: 200px; margin: 0 auto;">
+                    <a href="{% url 'Esta1' %}">
+                        <div class="mb-2">
+                            <img src="{% static 'AppMatriz/assets/iconos-cursos/estadistica.png' %}" alt="Esta 1 Icon" style="height: 80px;">
+                        </div>
+                        <h5 class="h5 mb-2">Estadística 1</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="mt-3" style="max-width: 200px; margin: 0 auto;">
+                    <a href="{% url 'Esta2' %}">
+                        <div class="mb-2">
+                            <img src="{% static 'AppMatriz/assets/iconos-cursos/estadistica.png' %}" alt="Esta 2 Icon" style="height: 80px;">
+                        </div>
+                        <h5 class="h5 mb-2">Estadística 2</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="mt-3" style="max-width: 300px; margin: 0 auto;">
+                    <a href="{% url 'Esta2' %}">
+                        <div class="mb-2">
+                            <img src="{% static 'AppMatriz/assets/iconos-cursos/pre.png' %}" alt="Esta 2 Icon" style="height: 80px;">
+                        </div>
+                        <h5 class="h5 mb-2">Análisis Multivariado para los Negocios</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Informática -->
+<section class="page-content">
+    <hr class="divider-long" />
+    <div class="container px-4 px-lg-5">
+        <h2 class="text-center mt-0">Informática</h2>
+        <hr class="divider" />
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-6 col-md-6 text-center">
+                <div class="mt-3" style="max-width: 200px; margin: 0 auto;">
+                    <a href="{% url 'Esta1' %}">
+                        <div class="mb-2">
+                            <img src="{% static 'AppMatriz/assets/iconos-cursos/cuaderno.png' %}" alt="Esta 1 Icon" style="height: 80px;">
+                        </div>
+                        <h5 class="h5 mb-2">Nivelación en Informática</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 text-center">
+                <div class="mt-3" style="max-width: 300px; margin: 0 auto;">
+                    <a href="{% url 'Esta2' %}">
+                        <div class="mb-2">
+                            <img src="{% static 'AppMatriz/assets/iconos-cursos/cuaderno.png' %}" alt="Esta 2 Icon" style="height: 80px;">
+                        </div>
+                        <h5 class="h5 mb-2">Analítica de Datos para los Negocios</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Economía -->
+<section class="page-content">
+    <hr class="divider-long" />
+    <div class="container px-4 px-lg-5">
+        <h2 class="text-center mt-0">Economía y Finanzas</h2>
+        <hr class="divider" />
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="mt-3" style="max-width: 200px; margin: 0 auto;">
+                    <a href="{% url 'Esta1' %}">
+                        <div class="mb-2">
+                            <img src="{% static 'AppMatriz/assets/iconos-cursos/estadistica.png' %}" alt="Esta 1 Icon" style="height: 80px;">
+                        </div>
+                        <h5 class="h5 mb-2">Economía 1</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="mt-3" style="max-width: 200px; margin: 0 auto;">
+                    <a href="{% url 'Esta2' %}">
+                        <div class="mb-2">
+                            <img src="{% static 'AppMatriz/assets/iconos-cursos/estadistica.png' %}" alt="Esta 2 Icon" style="height: 80px;">
+                        </div>
+                        <h5 class="h5 mb-2">Economía 2</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="mt-3" style="max-width: 300px; margin: 0 auto;">
+                    <a href="{% url 'Esta2' %}">
+                        <div class="mb-2">
+                            <img src="{% static 'AppMatriz/assets/iconos-cursos/pre.png' %}" alt="Esta 2 Icon" style="height: 80px;">
+                        </div>
+                        <h5 class="h5 mb-2">Fundamentos de Finanzas</h5>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Lenguaje -->
+<section class="page-content-bottom">
+    <hr class="divider-long" />
+    <div class="container px-4 px-lg-5">
+        <h2 class="text-center mt-0">Lenguaje</h2>
+        <hr class="divider" />
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="mt-3" style="max-width: 200px; margin: 0 auto;">
+                    <a href="{% url 'Esta1' %}">
+                        <div class="mb-2">
+                            <img src="{% static 'AppMatriz/assets/iconos-cursos/cuaderno.png' %}" alt="Esta 1 Icon" style="height: 80px;">
+                        </div>
+                        <h5 class="h5 mb-2">Nivelación en Lenguaje</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="mt-3" style="max-width: 200px; margin: 0 auto;">
+                    <a href="{% url 'Esta2' %}">
+                        <div class="mb-2">
+                            <img src="{% static 'AppMatriz/assets/iconos-cursos/cuaderno.png' %}" alt="Esta 2 Icon" style="height: 80px;">
+                        </div>
+                        <h5 class="h5 mb-2">Lenguaje 1</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="mt-3" style="max-width: 200px; margin: 0 auto;">
+                    <a href="{% url 'Esta2' %}">
+                        <div class="mb-2">
+                            <img src="{% static 'AppMatriz/assets/iconos-cursos/cuaderno.png' %}" alt="Esta 2 Icon" style="height: 80px;">
+                        </div>
+                        <h5 class="h5 mb-2">Lenguaje 2</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock refuerzo2 %}

@@ -10858,12 +10858,12 @@ body {
 }
 
 .page-content {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 0;
 }
 
 .page-content-bottom {
-  padding-top: 4rem;
+  padding-top: 0;
   padding-bottom: 9rem;
 }
 
@@ -10886,6 +10886,15 @@ hr.divider {
   margin: 1.5rem auto;
   background-color: #f43a3a;
   opacity: 1;
+}
+
+hr.divider-long {
+  height: 0.2rem;
+  max-width: 80vw;
+  margin: 1.5rem auto;
+  background-color: #f43a3a;
+  opacity: 1;
+  margin-bottom: 4rem;
 }
 
 hr.divider-light {
