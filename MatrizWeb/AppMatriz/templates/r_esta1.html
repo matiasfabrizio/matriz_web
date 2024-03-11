@@ -36,7 +36,7 @@
 </section>
 
 
-<section class="page-section" id=esta1>
+<section class="page-section">
     <div class="container px-4 px-lg-5">
         <h2 class="text-center">Profesor a cargo</h2>
         <hr class="divider" />
@@ -57,14 +57,14 @@
     </div>
 </section>
 
-<!-- Horarios Section -->
-<section id="horarios">
+<!-- Horarios -->
+<section id="horario">
     <div class="container px-4 px-lg-8">
         <h2 class="text-center mt-0 text-uppercase fw-bold">Horario</h2>
         <hr class="divider" />
         <div class="row">
             {% for horario in horarios %}
-            <div class="col-md-12 mb-4">
+            <div class="col-md-12 mb-5">
                 <div class="text-center">
                     <img src="{{ horario.imagen.url }}" alt="Image {{ forloop.counter }}" class="img-fluid" >
                 </div>
@@ -78,7 +78,7 @@
 <section class="page-section bg-rojo text-white">
     <div class="container px-4 px-lg-5 text-center">
         <h2 class="mb-4">Ver más cursos de Refuerzo UP</h2>
-        <a class="btn btn-light btn-xl" href="/AppMatriz/refuerzo/">Regresar</a>
+        <a class="btn btn-light btn-xl" href="/AppMatriz/refuerzo_up/">Regresar</a>
     </div>
 </section>
 

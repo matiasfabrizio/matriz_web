@@ -28,7 +28,7 @@
 
     </head>
     <body id="page-top">
-        <!-- Navigation-->
+        <!-- Navegación -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="{% url 'Inicio' %}">
@@ -38,7 +38,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="{% url 'Nosotros' %}">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'Refuerzo' %}">Universitario</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'RefuerzoUP' %}">Universitario</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'RefuerzoPre' %}">Pre-Universitario</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'Adelanto' %}">Escolar</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contactanos">Redes</a></li>
@@ -47,52 +47,149 @@
             </div>
         </nav>
 
-        <!-- Masthead-->
-        <!-- 6 Ventanas de Inicio-->
-        <!-- Acerca de -->
+        <!-- Inicio -->
         {% block inicio %}
         
         {% endblock inicio %}
 
 
-
-        <!-- Admision-->
-        {% block admision %}
-        
-        {% endblock admision %}
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Refuerzo-->
+        <!-- Refuerzo -->
         {% block refuerzo %}
         
         {% endblock refuerzo %}
 
-        {% block refuerzo2 %}
-        
-        {% endblock refuerzo2 %}
+
+            <!-- Matemáticas -->
+            <!-- Nivelación Matemática -->
+            {% block nive_mate %}
+            
+            {% endblock nive_mate %}
+
+            <!-- Mate 1 -->
+            {% block mate1 %}
+            
+            {% endblock mate1 %}
+
+            <!-- Mate 2 -->
+            {% block mate2 %}
+            
+            {% endblock mate2 %}
+
+            <!-- Matemáticas para los Negocios -->
+            {% block mate_nego %}
+            
+            {% endblock mate_nego %}
+
+            <!-- Mate 3 -->
+            {% block mate3 %}
+            
+            {% endblock mate3 %}
+
+            <!-- Mate 4 -->
+            {% block mate4 %}
+            
+            {% endblock mate4 %}
 
 
-
-            <!-- Esta 1-->
+            <!-- Estadística -->
+            <!-- Esta 1 -->
             {% block esta1 %}
             
             {% endblock esta1 %}
 
-            <!-- Esta 2-->
+            <!-- Esta 2 -->
             {% block esta2 %}
             
             {% endblock esta2 %}
 
+            <!-- Análisis Multivariado para los Negocios -->
+            {% block amn %}
+            
+            {% endblock amn %}
 
+
+            <!-- Informática -->
+            <!-- Nivelación Informática -->
+            {% block nive_info %}
+            
+            {% endblock nive_info %}
+
+            <!-- Analítica de Datos para los Negocios -->
+            {% block analisis %}
+            
+            {% endblock analisis %}
+
+
+            <!-- Economía y Finanzas -->
+            <!-- Economía 1 -->
+            {% block eco1 %}
+            
+            {% endblock eco1 %}
+
+            <!-- Economía 2 -->
+            {% block eco2 %}
+            
+            {% endblock eco2 %}
+
+            <!-- Fundamentos de Finanzas -->
+            {% block funda_finanzas %}
+            
+            {% endblock funda_finanzas %}
+
+
+            <!-- Lenguaje -->
+            <!-- Nivelación en Lenguaje -->
+            {% block nive_lengua %}
+            
+            {% endblock nive_lengua %}
+
+            <!-- Lenguaje 1 -->
+            {% block lengua1 %}
+            
+            {% endblock lengua1 %}
+
+            <!-- Lenguaje 2 -->
+            {% block lengua2 %}
+            
+            {% endblock lengua2 %}
+
+
+        <!-- Refuerzo Pre -->
+        {% block refuerzo_pre %}
+        
+        {% endblock refuerzo_pre %}
+
+
+        <!-- Admisión UP -->
+        {% block adm_up %}
+        
+        {% endblock adm_up %}
+
+        {% block adm_regular %}
+        
+        {% endblock adm_regular %}
+
+        {% block adm_selectiva %}
+        
+        {% endblock adm_selectiva %}
+
+
+        <!-- Nivelación -->
+        {% block nivelacion %}
+        
+        {% endblock nivelacion %}
+
+
+        <!-- Adelanto -->
+        {% block adelanto %}
+        
+        {% endblock adelanto %}
+
+
+        <!-- Galería -->
+        {% block galeria %}
+        
+        {% endblock galeria %}
 
 
         <!-- Contacto -->
@@ -131,7 +228,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-8 col-lg-8 mx-3 my-2 d-flex justify-content-center align-items-center">
+                    <div class="col-8 col-lg-8 mx-3 mt-2 mb-5 d-flex justify-content-center align-items-center">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.3959462581047!2d-77.05317682314168!3d-12.08502364261792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8f91eb4fed5%3A0x2cdb5954d728d28b!2sGrupo%20La%20Matriz!5e0!3m2!1ses!2sca!4v1709299462987!5m2!1ses!2sca" class="w-100" style="border:0; height: 320px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>

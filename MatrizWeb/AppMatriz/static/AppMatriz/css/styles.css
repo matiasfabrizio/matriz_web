@@ -51,6 +51,7 @@
   --bs-rojo-rgb: 186, 20, 20;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 17, 25, 35;
+  --bs-darker-rgb: 65, 74, 97;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -8158,7 +8159,7 @@ textarea.form-control-lg {
 
 .bg-rojo {
   --bs-bg-opacity: 1;
-  background: linear-gradient(to right, rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)), rgba(var(--bs-rojo-rgb), var(--bs-bg-opacity))) !important;
+  background: linear-gradient(to right, rgba(var(--bs-darker-rgb), var(--bs-bg-opacity)), rgba(var(--bs-rojo-rgb), var(--bs-bg-opacity))) !important;
 }
 
 .bg-light {
