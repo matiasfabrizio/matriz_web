@@ -11,7 +11,6 @@ urlpatterns = [
     path('refuerzo_up/matematicas2', views.mate2, name="Mate2"),
     path('refuerzo_up/matematicas-negocios', views.mate_nego, name="MateNego"),
     path('refuerzo_up/matematicas3', views.mate3, name="Mate3"),
-    path('refuerzo_up/matematicas4', views.mate4, name="Mate4"),
     path('refuerzo_up/estadistica1', views.r_esta1, name="Esta1"),
     path('refuerzo_up/estadistica2', views.r_esta2, name="Esta2"),
     path('refuerzo_up/amn', views.amn, name="AMN"),

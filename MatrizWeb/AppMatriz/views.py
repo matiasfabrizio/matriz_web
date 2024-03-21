@@ -73,12 +73,6 @@ def mate3(request):
 
     return render(request, "r_mate3.html", {"horarios":horarios})
 
-def mate4(request):
-    
-    horarios = Horario.objects.filter(imagen__icontains='mate4')
-
-    return render(request, "r_mate4.html", {"horarios":horarios})
-
 def r_esta1(request):
     
     horarios = Horario.objects.filter(imagen__icontains='esta1')
