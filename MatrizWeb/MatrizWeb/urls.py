@@ -5,7 +5,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('AppMatriz/', include('AppMatriz.urls')),
+    path('', include('AppMatriz.urls')),
 ]
 
 #Para las imágenes
